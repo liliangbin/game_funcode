@@ -34,10 +34,12 @@ float		g_fSpeedBottom	=	0.f;  	// об
 int  ctroljump=0;
 
 
+int ctrolhit=0;
+
 void up(const int iKey)
 {
 
-    if(dGetSpritePositionX("hero")>-39.f||dGetSpritePositionY("hero")<39.f)
+    if(dGetSpritePositionX("hero")>-28.f||dGetSpritePositionY("hero")<28.f)
     {
 
         switch(iKey)
@@ -87,7 +89,7 @@ void  head(const int iKey)
     }
 
 
-    if(dGetSpritePositionX("hero")>37.f)
+    if(dGetSpritePositionX("hero")>28.f)
     {
         //   printf("%f     ",dGetSpritePositionX("renwu") );
 
@@ -104,7 +106,7 @@ void  head(const int iKey)
         }
     }
 
-    if(dGetSpritePositionX("hero")<-37.f)
+    if(dGetSpritePositionX("hero")<-28.f)
     {
         // printf("%f     ",dGetSpritePositionX("renwu") );
 

@@ -33,7 +33,7 @@ extern float		g_fSpeedBottom	;  	// об
 
 
 extern int ctroljump;
-
+extern int ctrolhit;
 
 
 #endif // _LESSON_X_H_

@@ -88,22 +88,29 @@ void	Sceen1::GameRun( float fDeltaTime )
     g_fScreenBottom = 	dGetScreenBottom();
 
 
-    dSetSpriteWorldLimit("hero", WORLD_LIMIT_NULL, g_fScreenLeft, -5, g_fScreenRight, g_fScreenBottom);
+    dSetSpriteWorldLimit("hero", WORLD_LIMIT_NULL, g_fScreenLeft+5, -5, g_fScreenRight-5, g_fScreenBottom);
     dSetSpriteMass( "hero", 1);
 
     float speed =g_fSpeedLeft+g_fSpeedRight;
 
-    if(speed==0)
+    if(speed==0&&ctrolhit==0)
     {
+
         dAnimateSpritePlayAnimation("hero","herodongtu2",0);
 
 
     }
-//    else
-//    {
-//        dAnimateSpritePlayAnimation("hero","herodongtu2",0);
-//
-//    }
+
+    else if(ctrolhit==1&&strcmp("herodongtu3",dGetAnimateSpriteAnimationName( "hero" )))
+{
+
+    ctrolhit=0;
+    printf("daji ");
+
+    }
+
+
+
 
 }
 
@@ -154,7 +161,7 @@ void Sceen1::SpriteColWorldLimit( const char *szName, const int iColSide )
         }
         else if(iColSide==3)
         {
-            dSetSpriteLinearVelocityY("hero", -3);
+            dSetSpriteLinearVelocityY("hero", -3.5);
             ctroljump=1;
         }
 
@@ -168,11 +175,20 @@ void Sceen1::KeyDown( const int iKey, const int iAltPress, const int iShiftPress
     head(iKey);
 
 
-    if(iKey== KEY_K&&ctroljump==1)
+    if(iKey == KEY_K&&ctroljump==1)
     {
 
         ctroljump=0;
         dSetSpriteImpulseForce("hero",0,-160,0);
+        printf("jfdfhjskd");
+
+    }
+
+    if (iKey==KEY_J&&ctrolhit==0)
+    {
+
+        dAnimateSpritePlayAnimation("hero","herodongtu3",1);
+        ctrolhit=1;
 
     }
 
