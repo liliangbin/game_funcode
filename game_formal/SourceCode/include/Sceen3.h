@@ -1,8 +1,8 @@
 #ifndef SCEEN3_H
 #define SCEEN3_H
+#include "Sceen.h"
 
-
-class Sceen3
+class Sceen3:public Sceen
 {
 public:
     Sceen3();

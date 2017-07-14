@@ -2,7 +2,7 @@
 #define SCEEN2_H
 #include "Sceen.h"
 
-class Sceen2
+class Sceen2:public Sceen
 {
 public:
     Sceen2();

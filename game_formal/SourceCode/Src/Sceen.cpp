@@ -18,11 +18,15 @@ void		GameRun( float fDeltaTime );
 void		GameEnd();
 
 
+
 void Sceen::Load()
 {
-    dLoadMap("level.t2d");
-    g_iGameState		=	0;
+    dLoadMap("level1.t2d");
+    g_iGameState		=	1;
+
+    printf("场景的出现");
 }
+
 
 
 void Sceen::MainLoop( float	fDeltaTime )
@@ -33,6 +37,7 @@ void Sceen::MainLoop( float	fDeltaTime )
     case 1:
     {
         GameInit();
+        printf("game kaishi");
         g_iGameState	=	2; // 初始化之后，将游戏状态设置为进行中
     }
     break;
@@ -74,6 +79,8 @@ void	Sceen::GameInit()
 // 每局游戏进行中
 void	Sceen::GameRun( float fDeltaTime )
 {
+
+
 }
 //==============================================================================
 //
@@ -85,18 +92,28 @@ void	Sceen::GameEnd()
 void Sceen::MouseMove( const float fMouseX, const float fMouseY )
 {
 
+
+
 }
 void Sceen::MouseClick( const int iMouseType, const float fMouseX, const float fMouseY )
 {
+
+
+state =1 ;
+// b[state]->Load();
 
 }
 void Sceen::MouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
 {
 
+
+
 }
 
 void Sceen::SpriteColSprite( const char *szSrcName, const char *szTarName )
 {
+
+
 }
 
 void Sceen::SpriteColWorldLimit( const char *szName, const int iColSide )

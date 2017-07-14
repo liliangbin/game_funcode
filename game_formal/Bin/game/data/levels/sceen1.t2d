@@ -38,15 +38,38 @@
       cameraSize = "100 75";
 
    new t2dStaticSprite() {
-      imageMap = "_4440047ImageMap";
+      imageMap = "backgroundImageMap";
       frame = "0";
       useSourceRect = "0";
-      sourceRect = "0 0 2.37781e-039 6.22886e-039";
+      sourceRect = "0 0 2.36013e-039 6.22886e-039";
       canSaveDynamicFields = "1";
-      Position = "0.000 -0.176";
-      size = "100.000 74.649";
+      Position = "58.536 -0.324";
+      size = "217.072 74.352";
+      Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
          mountID = "2";
+   };
+   new t2dStaticSprite(herojingtai) {
+      imageMap = "hero1";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "0 0 2.36013e-039 6.22886e-039";
+      canSaveDynamicFields = "1";
+      Position = "-44.188 52.726";
+      size = "18.375 24.548";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "3";
+   };
+   new t2dAnimatedSprite(hero) {
+      animationName = "hero11Animation";
+      canSaveDynamicFields = "1";
+      Position = "-38.115 22.944";
+      size = "20.000 24.112";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      ConstantForce = "0.000 100.000";
+         mountID = "4";
    };
 };

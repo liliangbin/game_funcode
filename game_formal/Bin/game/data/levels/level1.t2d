@@ -38,15 +38,39 @@
       cameraSize = "100 75";
 
    new t2dStaticSprite() {
-      imageMap = "_4440047ImageMap";
+      imageMap = "pcgametopicpic_8104706391455765026ImageMap";
       frame = "0";
       useSourceRect = "0";
       sourceRect = "0 0 2.37781e-039 6.22886e-039";
       canSaveDynamicFields = "1";
-      Position = "0.000 -0.176";
-      size = "100.000 74.649";
+      Position = "0.000 0.275";
+      size = "100.000 74.450";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
          mountID = "2";
+   };
+   new t2dTextObject(jiekou) {
+      canSaveDynamicFields = "1";
+      Position = "33.303 27.812";
+      size = "9.750 10.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      text = "ab";
+      font = "Arial";
+      wordWrap = "0";
+      hideOverflow = "1";
+      textAlign = "Left";
+      lineHeight = "10";
+      aspectRatio = "1";
+      lineSpacing = "0";
+      characterSpacing = "0";
+      autoSize = "1";
+      fontSizes = "80";
+      textColor = "1 1 1 1";
+      bilinearFilter = "0";
+      snapToInteger = "0";
+      noUnicode = "0";
+         hideOverlap = "0";
+         mountID = "3";
    };
 };

@@ -5,18 +5,23 @@
 #include "LessonX.h"
 #include "Sceen.h"
 #include "Sceen1.h"
+#include "stdio.h"
 
 
 //int state = 0;
 //Sceen  *b[4] = {new Sceen,new Sceen,new Sceen,new Sceen};
 //
 //int  g_iGameState = 0;
+int name=0;
+int test=-1;
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //
 // 主函数入口
 //
 //////////////////////////////////////////////////////////////////////////////////////////
+
 int PASCAL WinMain(HINSTANCE hInstance,
                    HINSTANCE hPrevInstance,
                    LPSTR     lpCmdLine,
@@ -25,6 +30,8 @@ int PASCAL WinMain(HINSTANCE hInstance,
     // 初始化游戏引擎
     if( !dInitGameEngine( hInstance, lpCmdLine ) )
         return 0;
+
+
 
 
     // To do : 在此使用API更改窗口标题
@@ -37,7 +44,22 @@ int PASCAL WinMain(HINSTANCE hInstance,
         float	fTimeDelta	=	dGetTimeDelta();
 
         // 执行游戏主循环
+if(test!=state){
+
+     b[state]->Load();
+
+     test =state;
+
+}
+
         b[state]->MainLoop( fTimeDelta );
+
+
+        if(state==0&&name==0){
+
+            printf("changjing");
+            name=1;
+        }
 
     };
 
@@ -88,13 +110,16 @@ void dOnKeyUp( const int iKey )
 {
     // 可以在此添加游戏需要的响应函数
     b[state]->KeyUp( iKey );
+
+
+
+
 }
 
 //===========================================================================
 //
 // 引擎捕捉到精灵与精灵碰撞之后，调用此函数
 void dOnSpriteColSprite( const char *szSrcName, const char *szTarName )
-
 {
 
 
@@ -105,10 +130,20 @@ b[state]->SpriteColSprite( szSrcName,  szTarName );
 //
 // 引擎捕捉到精灵与世界边界碰撞之后，调用此函数.
 // iColSide : 0 左边，1 右边，2 上边，3 下边
+
+
 void dOnSpriteColWorldLimit( const char *szName, const int iColSide )
 {
+
+
     b[state]->SpriteColWorldLimit(  szName,  iColSide );
+    printf("name");
+
+
+
 }
+
+
 
 
 

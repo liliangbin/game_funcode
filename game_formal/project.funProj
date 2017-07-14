@@ -4,7 +4,7 @@
    <Version>v1.7.5</Version>
    <MinVersion>v1.1.4</MinVersion>
    <Creator>Torque Game Builder</Creator>
-   <LastLevel>Bin/game/data/levels/level3.t2d</LastLevel>
+   <LastLevel>Bin/game/data/levels/sceen1.t2d</LastLevel>
    <ProjectName>game_formal</ProjectName>
    <ProjectType>C</ProjectType>
    <JavaDevVersion>JCreator</JavaDevVersion>

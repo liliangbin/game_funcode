@@ -1,30 +1,34 @@
 # depslib dependency file v1.0
 1420212242 source:f:\funcode\game_formal\sourcecode\icon.rc
 
-1499951285 source:f:\funcode\game_formal\sourcecode\src\lessonx.cpp
+1500009454 source:f:\funcode\game_formal\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonAPI.h"
 	"LessonX.h"
 	"Sceen.h"
 	"Sceen1.h"
+	"Sceen2.h"
+	"Sceen3.h"
 
 1422201536 f:\funcode\game_formal\sourcecode\header\commonapi.h
 	<windows.h>
 
-1499951262 f:\funcode\game_formal\sourcecode\header\lessonx.h
+1500009454 f:\funcode\game_formal\sourcecode\header\lessonx.h
 	<Windows.h>
 	"Sceen.h"
 
-1499951125 source:f:\funcode\game_formal\sourcecode\src\main.cpp
+1500000389 source:f:\funcode\game_formal\sourcecode\src\main.cpp
 	"CommonAPI.h"
 	"LessonX.h"
 	"Sceen.h"
 	"Sceen1.h"
+	"stdio.h"
 
-1499949967 source:f:\funcode\game_formal\sourcecode\src\sceen1.cpp
+1500004196 source:f:\funcode\game_formal\sourcecode\src\sceen1.cpp
 	"Sceen1.h"
 	"CommonAPI.h"
 	"LessonX.h"
+	"stdio.h"
 
 1499951302 f:\funcode\game_formal\sourcecode\include\sceen1.h
 	"Sceen.h"
@@ -34,10 +38,10 @@
 	"CommonAPI.h"
 	"LessonX.h"
 
-1499951431 f:\funcode\game_formal\sourcecode\include\sceen2.h
+1499995263 f:\funcode\game_formal\sourcecode\include\sceen2.h
 	"Sceen.h"
 
-1499950692 source:f:\funcode\game_formal\sourcecode\src\sceen.cpp
+1500010218 source:f:\funcode\game_formal\sourcecode\src\sceen.cpp
 	"Sceen.h"
 	"CommonAPI.h"
 	"stdio.h"
@@ -46,8 +50,11 @@
 1499950479 f:\funcode\game_formal\sourcecode\include\sceen.h
 	"Sceen.h"
 
-1499949132 source:f:\funcode\game_formal\sourcecode\src\sceen3.cpp
+1499996508 source:f:\funcode\game_formal\sourcecode\src\sceen3.cpp
 	"Sceen3.h"
+	"CommonAPI.h"
+	"LessonX.h"
 
-1499949132 f:\funcode\game_formal\sourcecode\include\sceen3.h
+1499995327 f:\funcode\game_formal\sourcecode\include\sceen3.h
+	"Sceen.h"
 

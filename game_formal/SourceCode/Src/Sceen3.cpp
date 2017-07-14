@@ -93,10 +93,14 @@ void Sceen3::MouseClick( const int iMouseType, const float fMouseX, const float 
 void Sceen3::MouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
 {
 
+
+
 }
 
 void Sceen3::SpriteColSprite( const char *szSrcName, const char *szTarName )
 {
+
+
 }
 
 void Sceen3::SpriteColWorldLimit( const char *szName, const int iColSide )
