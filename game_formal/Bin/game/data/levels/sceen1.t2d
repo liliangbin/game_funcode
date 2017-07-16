@@ -37,13 +37,13 @@
       cameraPosition = "0 0";
       cameraSize = "100 75";
 
-   new t2dStaticSprite() {
+   new t2dStaticSprite(background) {
       imageMap = "backgroundImageMap";
       frame = "0";
       useSourceRect = "0";
       sourceRect = "2.36013e-039 0 2.36013e-039 6.22886e-039";
       canSaveDynamicFields = "1";
-      Position = "57.520 -0.324";
+      Position = "58.536 -0.324";
       size = "217.072 74.352";
       Layer = "4";
       WorldLimitMin = "-50.000 -37.500";
@@ -55,7 +55,7 @@
       useSourceRect = "0";
       sourceRect = "2.36013e-039 0 2.36013e-039 6.22886e-039";
       canSaveDynamicFields = "1";
-      Position = "-44.188 52.726";
+      Position = "-0.812 57.726";
       size = "18.375 24.548";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -64,16 +64,19 @@
    new t2dAnimatedSprite(hero) {
       animationName = "herodongtu2";
       canSaveDynamicFields = "1";
-      Position = "-29.649 24.723";
+      Position = "-29.429 25.756";
       size = "25.034 23.489";
+      SortPoint = "0.000 0.940";
+      Layer = "2";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
+      CollisionPolyList = "-0.712 -0.188 -0.481 -0.733 0.417 -1.000 0.776 0.628 0.791 0.942 0.123 0.958 -0.113 0.884 -0.683 0.654";
       ConstantForce = "0.000 100.000";
          mountID = "4";
    };
    new t2dTextObject() {
       canSaveDynamicFields = "1";
-      Position = "21.400 -33.500";
+      Position = "21.400 -26.000";
       size = "17.200 8.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -95,9 +98,9 @@
          hideOverlap = "0";
          mountID = "5";
    };
-   new t2dTextObject() {
+   new t2dTextObject(score) {
       canSaveDynamicFields = "1";
-      Position = "35.903 -33.500";
+      Position = "34.543 -26.000";
       size = "4.500 8.000";
       WorldLimitMin = "-50.000 -37.500";
       WorldLimitMax = "50.000 37.500";
@@ -118,5 +121,75 @@
       noUnicode = "0";
          hideOverlap = "0";
          mountID = "6";
+   };
+   new t2dAnimatedSprite(monster1) {
+      animationName = "yeguai2zouAnimation";
+      canSaveDynamicFields = "1";
+      Position = "63.058 26.250";
+      size = "20.000 22.500";
+      SortPoint = "-0.016 0.969";
+      Layer = "1";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "1";
+      CollisionPhysicsReceive = "1";
+      CollisionPolyList = "-0.741 -0.373 0.870 -0.393 0.803 0.879 -0.882 0.918";
+         mountID = "7";
+   };
+   new t2dStaticSprite(xuege) {
+      imageMap = "xuetiaoImageMap1";
+      frame = "0";
+      useSourceRect = "0";
+      sourceRect = "2.36013e-039 0 2.36013e-039 6.22886e-039";
+      canSaveDynamicFields = "1";
+      Position = "-33.434 -23.617";
+      size = "28.740 12.765";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "8";
+   };
+   new t2dAnimatedSprite(monster2) {
+      animationName = "yeguai4walkAnimation";
+      canSaveDynamicFields = "1";
+      Position = "-58.854 27.248";
+      size = "17.708 20.504";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "9";
+   };
+   new t2dAnimatedSprite(monster3) {
+      animationName = "yeguai3zouAnimation";
+      canSaveDynamicFields = "1";
+      Position = "-78.035 27.260";
+      size = "19.288 20.699";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+         mountID = "10";
+   };
+   new t2dTextObject() {
+      canSaveDynamicFields = "1";
+      Position = "13.327 -6.250";
+      size = "19.125 20.000";
+      WorldLimitMin = "-50.000 -37.500";
+      WorldLimitMax = "50.000 37.500";
+      text = "mudi\n";
+      font = "Arial";
+      wordWrap = "0";
+      hideOverflow = "1";
+      textAlign = "Left";
+      lineHeight = "10";
+      aspectRatio = "1";
+      lineSpacing = "0";
+      characterSpacing = "0";
+      autoSize = "1";
+      fontSizes = "80";
+      textColor = "1 1 1 1";
+      bilinearFilter = "0";
+      snapToInteger = "0";
+      noUnicode = "0";
+         hideOverlap = "0";
+         mountID = "11";
    };
 };

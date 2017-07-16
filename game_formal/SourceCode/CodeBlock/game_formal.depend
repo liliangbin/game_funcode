@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1420212242 source:f:\funcode\game_formal\sourcecode\icon.rc
 
-1500021710 source:f:\funcode\game_formal\sourcecode\src\lessonx.cpp
+1500173820 source:f:\funcode\game_formal\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonAPI.h"
 	"LessonX.h"
@@ -13,22 +13,23 @@
 1422201536 f:\funcode\game_formal\sourcecode\header\commonapi.h
 	<windows.h>
 
-1500016408 f:\funcode\game_formal\sourcecode\header\lessonx.h
+1500173834 f:\funcode\game_formal\sourcecode\header\lessonx.h
 	<Windows.h>
 	"Sceen.h"
 
-1500000389 source:f:\funcode\game_formal\sourcecode\src\main.cpp
+1500118891 source:f:\funcode\game_formal\sourcecode\src\main.cpp
 	"CommonAPI.h"
 	"LessonX.h"
 	"Sceen.h"
 	"Sceen1.h"
 	"stdio.h"
 
-1500021994 source:f:\funcode\game_formal\sourcecode\src\sceen1.cpp
+1500195364 source:f:\funcode\game_formal\sourcecode\src\sceen1.cpp
 	"Sceen1.h"
 	"CommonAPI.h"
 	"LessonX.h"
 	"stdio.h"
+	"math.h"
 
 1499951302 f:\funcode\game_formal\sourcecode\include\sceen1.h
 	"Sceen.h"

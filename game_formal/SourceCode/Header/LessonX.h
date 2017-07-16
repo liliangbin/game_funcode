@@ -33,7 +33,15 @@ extern float		g_fSpeedBottom	;  	// об
 
 
 extern int ctroljump;
-extern int ctrolhit;
+extern int ctrolhit,ctrolhit2[5],ctrolhit3[5],ctrolhit4,ctrolhitted;
+extern  double  ctroltimespace[5],monsterdie;
+extern  char * Name;
+extern void   MonsterMove(const char* Namer,float i);
 
+extern int   monstergo,score;
 
+extern  float  monsterappeartime;
+extern  int blood;
+
+extern void swim(const char * monstername);
 #endif // _LESSON_X_H_

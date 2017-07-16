@@ -57,7 +57,7 @@ if(test!=state){
 
         if(state==0&&name==0){
 
-            printf("changjing");
+           // printf("changjing");
             name=1;
         }
 
@@ -137,7 +137,6 @@ void dOnSpriteColWorldLimit( const char *szName, const int iColSide )
 
 
     b[state]->SpriteColWorldLimit(  szName,  iColSide );
-    printf("name");
 
 
 
